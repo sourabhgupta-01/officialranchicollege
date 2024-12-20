@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<style>
+
+  
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+  
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 40px;
+      margin-top: 20px;
+    }
+    
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+  
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    
+    .gallery-item img {
+      max-width: 100%;
+      display: block;
+      border-radius: 8px 8px 0 0; /* Rounded corners only on top */
+    }
+    
+  </style>
+<body>
+    <!-- NAV BAR CREATE -->
+    
+    <section class="navbar">
+      <nav>
+         <img src="image/logo_current.png" alt="logo">
+          <div class="nav_links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="abt.html">Home</a></li>
+                  <li><a href="#abt_page">About</a></li>
+                  <li><a href="">Administration</a></li>
+                  <!-- <li><a href="">Department</a></li>
+                  <li><a href="#facl_page">Facilities</a></li> -->
+                  <div class="dropdown">
+                      <li><a href="#">Department</a></li>
+                      <div class="dropdown-content">
+                      <a href="#">Ph.D</a>
+                      <a href="#">Social Science</a>
+                      <a href="#">Vocational</a>
+                      <a href="#">Certificate</a>
+                      <a href="#">Diploma</a>
+                      <a href="#">Humanities</a>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <li><a href="#">Facilities</a></li>
+                      <div class="dropdown-content">
+                      <a href="#">E-Library</a>
+                      <a href="#">Hostels</a>
+                      <a href="#">Banking</a>
+                      <a href="#">Medical Clinic</a>
+                      <a href="#">Health Club</a>
+                      <a href="#">Wi-Fi Campus</a>
+                      <a href="#">Banking</a>
+                      <a href="#">Wi-Fi Campus</a>
+                      <a href="#">Guest House</a>
+                      </div>
+                    </div>
+          <div class="dropdown">
+              <li><a href="#">Student Corner</a></li>
+              <div class="dropdown-content">
+              <a href="login.html">Student login</a>
+              <a href="#">Admission</a>
+              <a href="#">Syllabus</a>
+              <a href="#">Result</a>
+              <a href="image/Holiday_List_2024_DSPMU.pdf">Holiday list</a>
+              </div>
+            </div>
+          <li><a href="">Research</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+        <!-- IMAGE -->
+        <!-- <section class="header"></section> -->
+    </section>
+    <br />
+    <br />
+<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" ">
+      <h1 class="mb-0">Photo Gallery</h1>
+</div>
+<div class="gallery">
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal1.jpg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal2.jpeg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal3.jpeg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal4.jpeg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal5.jpeg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal6.jpeg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal7.jpeg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal8.jpeg" alt="Image 1">
+  </a>
+ 
+
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 1">
+    <img src="image/gal9.jpeg" alt="Image 1">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 2">
+    <img src="image/gal10.jpg" alt="Image 2">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 3">
+    <img src="image/gal11.jpg" alt="Image 3">
+  </a>
+  <a href="#" class="gallery-item" data-lightbox="gallery" data-title="Image 3">
+    <img src="image/gal12.jpg" alt="Image 3">
+  </a>
+
+<br>
+
+</div>
+   
+        <section class="bottom">
+            <div class="bottom-row">
+                <div class="bottom-col">
+                <h2>USEFUL RESORCES</h2>
+                <br>
+                    <a href="image/Holiday_List_2024_DSPMU.pdf">Holiday list 2024</a><br>
+                    <a href="">Download</a><br>
+                    <a href="">CUET</a><br>
+                    <a href="">AISHE</a><br>
+                    <a href="">Acedemic Calender</a><br>
+                </div>
+
+                <div class="bottom-col">
+                    <h2>STAFF LINKS</h2>
+                    <br>
+                        <a href="admin.html">Teacher's Login</a><br>
+                        <a href="login.html">Student Login</a><br>
+                        <a href="">Tearcher's Blogs</a><br> 
+                        <a href="gall.html">Gallery</a><br> 
+                </div>
+                <div class="bottom-col">
+                    <h2>USEFUL LINKS</h2>
+                    <br>
+                        <a href="#">Terms & Conditions</a><br>
+                        <a href="#">Teaching Staff</a><br>
+                        <a href="#">Non-Teaching Staff</a><br> 
+                        <a href="#">Contact Us</a><br>
+                        <a href="#">Feedback</a><br> 
+                </div>
+                <div class="bottom-icon">
+                    <img src="image/footerlogo.png" alt="image">
+                    <p>Dr. Shyama Prasad Mukherjee University
+
+                        Add:P.O. - Ranchi University Morabadi Ranchi- 834008
+                        Call:+91 860 304 8085
+                        Email:registrar@dspmuranchi.ac.in</p><br>
+                        <a href="https://www.youtube.com/@dspmu"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/RanchiCollegeRanchi"><i class="fa-brands fa-twitter"></i></a></i>
+                        <a href="https://www.youtube.com/@dspmu"><i class="fa-brands fa-instagram"></i></a></i>
+                        <a href="https://www.youtube.com/@dspmu"></a><i class="fa-brands fa-linked"></i>
+                        <a href="https://www.youtube.com/@dspmu"> <i class="fa-brands fa-youtube"></i></a></i>
+                        
+                </div>
+        </section>
+        <div class="footer">
+        <p>Copyright 2024 Dr. Shyama Prasad Mukherjee University Designed By Dept. of BSC IT</p>
+        </div>
+
+<!-- jAVA SCRIPIT FOR TOGGLE MENU -->
+
+
+<script>
+    var navLinks=document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.left="0";
+        navLinks.style.top="70px";
+    }
+    function hideMenu(){
+        navLinks.style.left="-200px";
+
+    }
+    
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
